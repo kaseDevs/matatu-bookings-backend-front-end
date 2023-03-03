@@ -1,0 +1,304 @@
+/* body */
+body{
+    height: 500px;
+    background-color: cadetblue;
+}
+/* //body */
+
+/* navigation */
+.navigation{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: #ffa404;
+    border-radius: 10px 10px 0px 0px;
+    height: 80px;
+}
+
+/* logo */
+.logo{
+    border: 2px solid black;
+    display: flex;
+}
+/* everything that resides within the logo class will adapt to the properties set */
+.logo > *{
+    margin: auto;
+}
+
+/* border-right on the logo tag image */
+
+.logo img{
+    border-right: solid 2px beige;
+    padding-right: 10px;
+}
+
+/* moving the title a little bit to from the left */
+.logo h1{
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+/* //logo */
+
+/* links */
+.links{
+    border: 2px solid black;
+    margin-right: 20px;
+}
+
+/* make sure the links are aligned in a row */
+.links ul{
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+/* rempoving the list style type and the text decoration */
+.links ul a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: auto;
+}
+
+/* change color on hover */
+.links ul a:hover{
+    color: #fcc404;
+    background-color: #f34434;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.links ul a li{
+    list-style-type: none;
+}
+/* //links */
+
+/* //navigation */
+
+/* home section */
+.home{
+    border: #fcc404 solid 2px;
+    min-height: 450px;
+    padding: 20px;
+    background: url(../images/van.jpg);
+    background-size: 100% 100%;
+    margin-top: 10px;
+}
+
+/* putting linear gradient to our welcome message section */
+.welcome-message{
+    background: linear-gradient(to left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 20px;
+}
+
+.welcome-message h2{
+    text-transform: uppercase;
+}
+
+.available-services{
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    border: #fcc404 solid 2px;
+}
+
+.available-services:hover{
+    background-color: #ffa404;
+}
+/* //home section */
+
+/* FOOTER */
+.footer{
+    background: linear-gradient(to left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    border:#fcc404 2px solid;
+    border-top: 0px;
+    margin: 20px 0px;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/* about */
+
+.about{
+    border-right: #f34434 solid 2px;
+    margin-right: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+}
+/* //about */
+
+/* social handles */
+.social-handles{
+    color: aliceblue;
+}
+
+.social-handles ul{
+    /* border: #f34434 solid 2px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-handles ul a{
+    text-decoration: none;
+    color: aliceblue;
+    /* border-bottom: #f34434 solid 1px; */
+    
+}
+
+.social-handles ul a:hover{
+    border-bottom: #f34434 dotted 2px;
+    color: #fcc404;
+}
+
+.social-handles ul a img{
+    margin-right: 20px;
+}
+
+.social-handles ul a li{
+    list-style-type: none;
+}
+/* end of social handles */
+
+/* contact */
+.contact{
+    border-left: solid #f34434 2px;
+    padding-left: 20px;
+    color: aliceblue;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 10px;
+}
+
+.contact form input{
+    padding: 10px;
+}
+
+.submit-btn{
+    background: linear-gradient(to left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    color: aliceblue;
+    border-radius: 30px;
+    border: #fcc404 2px solid;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background-color: #fcc404;
+    color: black;
+}
+/* //contact */
+/* //FOOTER */
+
+/* SERVICE */
+.services{
+    border: #fcc404 solid 2px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fcc404;
+    /* overflow-y: scroll; */
+}
+
+.services h3, .search-form{
+    margin: auto;
+    display: flex;
+}
+
+/* .search-form{
+    border-bottom: #fcc404 solid 2px;
+} */
+
+.search-form input{ 
+    width: 700px;
+    padding: 10px;
+    /* border-radius: 10px; */
+   
+}
+
+.service-card-section{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 100px;
+}
+
+.service-card{
+    border:  2px black solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-decoration: none;
+    color: aliceblue;
+    gap: 20px;
+}
+
+.service-card img{
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.service-description{
+    border-top:  2px black solid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.service-description > *{
+    margin: auto;
+}
+
+/* //SERVICES */
+
+.request{
+    border: #fcc404 solid 2px; 
+    display: flex;
+    flex-direction: column;
+    padding: 20PX;
+    text-align: center;
+    margin-top: 10px
+}
+
+.request-form{
+    display: flex;
+    flex-direction: column;
+    /* border: solid 2PX black; */
+    margin: auto;
+    width: 700px;
+    gap: 10px;
+}
+
+.request-form input{
+    padding: 20px;
+
+}
+
+.request-form select{
+    padding: 20px;
+}
+
+.request-form .request-btn{
+    background: linear-gradient(to left, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    color: aliceblue;
+}
+
+.request-form .request-btn:hover{
+    background-color: #fcc404;
+    color: aliceblue;
+}
+
